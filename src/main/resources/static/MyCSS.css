@@ -86,6 +86,34 @@ li a:hover, .dropdown:hover .dropbtn {
         margin: 0.4em auto;
     }
 }
+
+.createCustomer{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #F58F29;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#F58F29;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.createCustomer button:hover{
+    color: #f3f3f3;
+    background-color:#F58F29;
+}
+@media all and (max-width:30em) {
+    .createCustomer button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
 .customerHeader {
     font-family: sans-serif;
     text-align: center;
@@ -96,4 +124,40 @@ li a:hover, .dropdown:hover .dropbtn {
     font-family: sans-serif;
     text-align: center;
     color: #423E37;
+}
+
+.customerParagraph label{
+    font-family: sans-serif;
+    text-align: center;
+    color: #423E37;
+}
+
+.wrapperCreateCustomer{
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f3f3f3;
+    text-align: center;
+    border: 2px solid #F58F29;
+    width: 700px;
+    height: 550px;
+
+}
+
+.wrapperCreateCustomer label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.wrapperCreateCustomer input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
 }

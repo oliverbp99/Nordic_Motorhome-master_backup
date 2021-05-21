@@ -14,6 +14,5 @@ public class RentalService {
 
     public List<Rental> showRental(){
         return rentalRepo.showRental();
-
     }
 }
