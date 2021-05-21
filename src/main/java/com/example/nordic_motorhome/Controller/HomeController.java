@@ -60,4 +60,16 @@ public class HomeController {
         customerService.createCustomer(customer);
         return "redirect:/customer";
     }
+
+    @GetMapping("/updateCustomer/{customer_id}")
+    public String update(@PathVariable("customer_id") int customer_id, Model model){
+        model.addAttribute("customer", customerService.findCustomerById(customer_id));
+        return "home/updateCustomer";
+    }
+
+    @PostMapping("/updatesCustomer")
+    public String updateCustomer(@ModelAttribute Customer customer){
+        customerService.updateCustomer(customer.getCustomer_id(), customer);
+        return "redirect:/customer";
+    }
 }

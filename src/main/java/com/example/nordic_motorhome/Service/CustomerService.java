@@ -23,4 +23,12 @@ public class CustomerService {
     public Customer createCustomer(Customer c){
         return customerRepo.createCustomer(c);
     }
+
+    public Customer updateCustomer(int customer_id, Customer c){
+        return customerRepo.updateCustomer(customer_id, c);
+    }
+
+    public Customer findCustomerById(int customer_id){
+        return customerRepo.findCustomerById(customer_id);
+    }
 }
