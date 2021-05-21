@@ -19,4 +19,8 @@ public class CustomerService {
     public Boolean deleteCustomer(int customer_id){
         return customerRepo.deleteCustomer(customer_id);
     }
+
+    public Customer createCustomer(Customer c){
+        return customerRepo.createCustomer(c);
+    }
 }

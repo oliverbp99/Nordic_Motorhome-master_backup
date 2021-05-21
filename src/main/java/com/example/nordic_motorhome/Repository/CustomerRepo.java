@@ -24,4 +24,10 @@ public class CustomerRepo {
         String sql = "DELETE FROM customer WHERE customer_id = ?";
         return template.update(sql, customer_id) < 0;
     }
+
+    public Customer createCustomer(Customer c){
+        String sql = "INSERT INTO customer (customer_id, first_name, last_name, phone_number, email, driver_license_number, address, zip_code) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        template.update(sql, c.getCustomer_id(), c.getFirst_name(), c.getLast_name(), c.getPhone_number(), c.getEmail(), c.getDriver_license_number(), c.getAddress(), c.getZip_code());
+        return null;
+    }
 }

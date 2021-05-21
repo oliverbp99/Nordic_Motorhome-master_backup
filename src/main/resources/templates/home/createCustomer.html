@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nordic Motorhome</title>
+  <link rel="stylesheet" type="text/css" href="MyCSS.css">
+</head>
+<body>
+<ul>
+  <p id="Header">Nordic Motorhome</p>
+  <li><a class="dtopbtn" href="#">Motorhomes</a></li>
+  <li><a class="dtopbtn" href="/customer">Customers</a></li>
+  <li><a class="dtopbtn" href="#">Rentals</a></li>
+
+</ul>
+
+  <h1 class="customerHeader">Create New customer</h1>
+  <form action="/createCustomer" method="post">
+    <label>Enter first name</label>
+    <input type="text" name="first_name" placeholder="First name">
+    <label>Enter last name</label>
+    <input type="text" name="last_name" placeholder="Last name">
+    <label>Enter phone number</label>
+    <input type="text" name="phone_number" placeholder="Phone number">
+    <label>Enter email</label>
+    <input type="text" name="email" placeholder="Email">
+    <label>Enter driver license number</label>
+    <input type="text" name="driver_license_number" placeholder="Driver license number">
+    <label>Enter address</label>
+    <input type="text" name="address" placeholder="Address">
+    <label>Enter zip code</label>
+    <input type="text" name="zip_code" placeholder="Zip code">
+    <input type="submit" value="Create new customer" style="color: #F58F29">
+  </form>
+</body>
+</html>
